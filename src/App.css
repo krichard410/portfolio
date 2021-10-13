@@ -81,8 +81,7 @@ li {
 }
 
 .introContainer{
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding: 130px 130px 130px 130px;
 }
 
 .footerContainer{
