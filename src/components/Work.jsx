@@ -22,7 +22,7 @@ class Work extends Component {
 
   render() {
     return (
-      <div class="container-sm workContainer">
+      <div class="container-fluid workContainer">
         {/*/ Container 1 */}
         <div class="card mb-3">
           <div class="row g-0">
@@ -40,9 +40,8 @@ class Work extends Component {
               <div class="card-body">
                 <h3 class="card-title">Crypto &amp; Blockchain</h3>
                 <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Languages &amp; Skills used: Vue-JS, React, some Rust,
+                  JavaScript, Technical Writing, Technical Speaking.
                 </p>
                 <p class="card-text">
                   <small class="text-muted">
@@ -77,8 +76,8 @@ class Work extends Component {
             </div>
           ) : null}
         </div>
-         {/*/ Container 2 */}
-         <div class="card mb-3">
+        {/*/ Container 2 */}
+        <div class="card mb-3">
           <div class="row g-0">
             <div class="col-md-5 crypto">
               {/* Manifold img src: https://www.globenewswire.com/NewsRoom/AttachmentNg/aade3bcf-ef11-4593-98cc-14752c8a3102*/}
@@ -94,9 +93,10 @@ class Work extends Component {
               <div class="card-body">
                 <h3 class="card-title">Front End Engineering</h3>
                 <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Languages &amp; Skills used: React, Vue-JS, PHP, Node-JS,
+                  JavaScript, HTML, CSS, Gatsby-JS, Kubernetes, some Ruby on
+                  Rails, Technical Teaching, Public Speaking, Leadership,
+                  Technical Writing.
                 </p>
                 <p class="card-text">
                   <small class="text-muted">
@@ -136,11 +136,7 @@ class Work extends Component {
           <div class="row g-0">
             <div class="col-md-5 crypto">
               {/* CLC img src: https://stemminds.com/wp-content/uploads/2018/05/clc.html*/}
-              <img
-                src={clc}
-                class="img-fluid rounded-start"
-                alt="clc"
-              />
+              <img src={clc} class="img-fluid rounded-start" alt="clc" />
               {/* LRF img src: https://www.linkedin.com/company/little-robot-friends/?originalSubdomain=ca*/}
               <img src={lrf} class="img-fluid rounded-start" alt="lrf" />
             </div>
@@ -148,9 +144,8 @@ class Work extends Component {
               <div class="card-body">
                 <h3 class="card-title">Developer Relations</h3>
                 <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Languages &amp; Skills used: HTML, CSS, C, Ardiuno, Technical
+                  Teaching, Public Speaking, Technical Writing.
                 </p>
                 <p class="card-text">
                   <small class="text-muted">

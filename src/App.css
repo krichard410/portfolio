@@ -26,15 +26,13 @@
   height: auto;
 }
 
-/* .crypto is for both the polkadot and web3 images */
+/* .crypto is for images */
 .crypto{
   display: flex;
   justify-content: space-evenly;
 }
 
 .mb-3 {
-  /* border: 2px solid white; */
-  border-radius: 15px;
   padding: 25px;
   margin-top: 100px;
 }
@@ -81,19 +79,6 @@ li {
   animation: fadeIn 2.7s;
   opacity: 1;
 }
-
-/* .click-for-more:focus, .click-for-more:active{
-  background: none;
-  border-radius: 15px;
-  outline: none;
-  border: 1px solid white;
-  padding: 15px;
-}
-
-.click-for-more:hover{
-  background-color:#BB86FC;
-  color: white;
-} */
 
 .introContainer{
   padding-top: 130px;
@@ -156,9 +141,16 @@ li {
 @media only screen and (min-width: 425px) and (max-width: 768px) {
   /* For tablets: */
   .mb-3 {
-    /* border: 2px solid white; */
     border-radius: 15px;
     padding: 25px;
     margin-top: 80px;
   }
 }
+
+@media only screen and (min-width: 2560px) { 
+  /* For desktops: */
+  .container-fluid{
+    padding: 125px;
+  }
+}
+

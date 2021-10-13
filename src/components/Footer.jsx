@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Footer extends Component {
   render() {
     return (
-      <div class="container-sm footerContainer mb-3">
+      <div class="container footerContainer mb-3">
         <h3>Let's work together,&nbsp;</h3>
         <h3>
           <a href="mailto: kirsten.richard@dal.ca">email me</a>
