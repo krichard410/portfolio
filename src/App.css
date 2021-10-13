@@ -1,38 +1,164 @@
-.App {
+.Special-Text {
+  color: #BB86FC;
+}
+
+.row {
+  align-items: center;
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.social-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card{
+  background: none;
+}
+
+.img-crypto, .img-fluid {
+  width: 30%;
+  height: auto;
+}
+
+/* .crypto is for both the polkadot and web3 images */
+.crypto{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.mb-3 {
+  /* border: 2px solid white; */
+  border-radius: 15px;
+  padding: 25px;
+  margin-top: 100px;
+}
+
+.accordion{
+  background: none;
+}
+
+.card {
+  background: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.click-for-more{
+  background: none;
+  outline: none;
+  border: none;
+  padding: 0px;
+  transition: all 1s ease-out;
+}
+
+.click-for-more:hover{
+  border-bottom: 1px solid #BB86FC;
+}
+
+.fadeIn {
+	animation: fadeIn 2s;
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+  	opacity: 0;
+  }
+  to {
+ 	opacity: 1;
+  }
+}
+
+.fadeInSlow{
+  animation: fadeIn 2.7s;
+  opacity: 1;
+}
+
+/* .click-for-more:focus, .click-for-more:active{
+  background: none;
+  border-radius: 15px;
+  outline: none;
+  border: 1px solid white;
+  padding: 15px;
+}
+
+.click-for-more:hover{
+  background-color:#BB86FC;
+  color: white;
+} */
+
+.introContainer{
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.footerContainer{
+  padding-top: 130px;
+  padding-bottom: 130px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contactContainer {
+  margin-top: 130px;
+  padding-left: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flexCenter{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.workContainer{
+  margin-bottom: 80px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.tinyImg {
+  width: 80px;
+  height:auto;
+}
+
+/* CSS Media Queries */
+
+@media only screen and (max-width: 425px) {
+  /* For mobile phones: */
+  .mb-3 {
+    padding: 25px;
+    margin-top: 10px;
   }
-  to {
-    transform: rotate(360deg);
+  h1 {
+    font-size: 9vw;
+  }
+  
+  h2 {
+    font-size: 7.5vw;
+  }
+  
+  h4, h3 {
+    font-size: 7vw;
+  }
+  .socials {
+    text-align: right;
+    justify-content: flex-end;;
+  }
+  .contactCol {
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+  /* For tablets: */
+  .mb-3 {
+    /* border: 2px solid white; */
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 80px;
   }
 }

@@ -1,3 +1,12 @@
+:root {
+  --darkThemeBackground: #121212;
+  --darkThemeFontColor: #E2E2E2;
+}
+
+html{
+  border-left: 2px solid white;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +14,27 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--darkThemeBackground);
+  color: var(--darkThemeFontColor);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1 {
+  font-size: 5vw;
+}
+
+h2 {
+  font-size: 3.5vw;
+}
+
+h4, h3 {
+  font-size: 3vw;
+}
+
+a, a:hover{
+  color: #BB86FC;
 }
