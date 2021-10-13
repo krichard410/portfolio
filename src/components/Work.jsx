@@ -41,7 +41,7 @@ class Work extends Component {
                 <h3 class="card-title">Crypto &amp; Blockchain</h3>
                 <p class="card-text">
                   Languages &amp; Skills used: Vue-JS, React, some Rust,
-                  JavaScript, Technical Writing, Technical Speaking.
+                  JavaScript, Technical Writing, Technical Speaking.<br/>Based in Zug, Switzerland
                 </p>
                 <p class="card-text">
                   <small class="text-muted">
@@ -62,16 +62,38 @@ class Work extends Component {
                 class="card-body fadeIn"
                 style={{ marginTop: "20px", marginBottom: "20px" }}
               >
-                Anim pariatur cliche reprehenderit, enim eiusmod high life
-                accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                non cupidatat skateboard dolor brunch. Food truck quinoa
-                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
-                put a bird on it squid single-origin coffee nulla assumenda
-                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
-                wes anderson cred nesciunt sapiente ea proident. Ad vegan
-                excepteur butcher vice lomo. Leggings occaecat craft beer
-                farm-to-table, raw denim aesthetic synth nesciunt you probably
-                haven't heard of them accusamus labore sustainable VHS.
+                During my time as a Technical Educator Intern at Web3
+                Foundation, I was engaged in creating tutorials for blockchain
+                developers{" "}
+                <a href="https://dotleap.com/building-and-address-converter-page-polkadot/">
+                  (like this one)
+                </a>
+                , hosting technical webinars on cryptocurrency{" "}
+                <a href="https://www.crowdcast.io/e/testing-rococo-parachain">
+                  (can be found here)
+                </a>
+                , and practicing my technical writing skills on their{" "}
+                <a href="https://medium.com/web3foundation/tech-and-research-update-june-f82d6287974f">
+                  Medium blog
+                </a>{" "}
+                and on their{" "}
+                <a href="https://wiki.polkadot.network/">Polkadot Wiki.</a>{" "}
+                Through this position, I also worked with other crypto
+                platforms, worked with Rust and React, and created a number of{" "}
+                <a href="https://www.youtube.com/playlist?list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8">
+                  Youtube Technical Explainer videos
+                </a>{" "}
+                for the Polkadot Blockchain Developer Community. I also got to
+                utilize my artistic skills and put together an animation,
+                featured{" "}
+                <a href="https://wiki.polkadot.network/docs/learn-crosschain">
+                  here
+                </a>{" "}
+                on their Wiki, that explains how XCMP or Cross-Chain Message
+                Passing works on the Polkadot Blockchain between parachains.
+                <br />
+                <br /> This opportunity kicked off my passion for decentralization,
+                blockchain technologies, and cryptocurrency. 
               </div>
             </div>
           ) : null}
@@ -93,10 +115,10 @@ class Work extends Component {
               <div class="card-body">
                 <h3 class="card-title">Front End Engineering</h3>
                 <p class="card-text">
-                  Languages &amp; Skills used: React, Vue-JS, PHP, Node-JS,
+                  Languages &amp; Skills used: React, Vue-JS, PHP, SQL, Node-JS,
                   JavaScript, HTML, CSS, Gatsby-JS, Kubernetes, some Ruby on
                   Rails, Technical Teaching, Public Speaking, Leadership,
-                  Technical Writing.
+                  Technical Writing.<br/>Based in Halifax, Canada
                 </p>
                 <p class="card-text">
                   <small class="text-muted">
@@ -117,16 +139,22 @@ class Work extends Component {
                 class="card-body fadeIn"
                 style={{ marginTop: "20px", marginBottom: "20px" }}
               >
-                Anim pariatur cliche reprehenderit, enim eiusmod high life
-                accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                non cupidatat skateboard dolor brunch. Food truck quinoa
-                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
-                put a bird on it squid single-origin coffee nulla assumenda
-                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
-                wes anderson cred nesciunt sapiente ea proident. Ad vegan
-                excepteur butcher vice lomo. Leggings occaecat craft beer
-                farm-to-table, raw denim aesthetic synth nesciunt you probably
-                haven't heard of them accusamus labore sustainable VHS.
+                Throughout the past four years, I have held various Front end
+                positions in many different positions. One of them being a Head
+                TA for Web Design &amp; Development and Server Side Scripting at
+                Dalhousie University. During this role, I managed the TA team
+                (of about 40+ TA's) and taught to many students. Through this
+                position, I was able to communicate in a technical and
+                understanding manner and effectively explain topics in the
+                course's material.
+                <br />
+                <br />
+                While I was a Junior Software Developer at Manifold, I worked in
+                both front end and back end in the company. I focused on
+                utilizing React to build and fix components on their main
+                website. I also used to write blogs about Kubernetes on their{" "}
+                <a href="https://kubelist.com/">Kubelist.</a> In the back end, I
+                was using Docker and Kubernetes to test containers.
               </div>
             </div>
           ) : null}
@@ -145,7 +173,7 @@ class Work extends Component {
                 <h3 class="card-title">Developer Relations</h3>
                 <p class="card-text">
                   Languages &amp; Skills used: HTML, CSS, C, Ardiuno, Technical
-                  Teaching, Public Speaking, Technical Writing.
+                  Teaching, Public Speaking, Technical Writing.<br/>Based in Toronto, Canada
                 </p>
                 <p class="card-text">
                   <small class="text-muted">
@@ -166,16 +194,24 @@ class Work extends Component {
                 class="card-body fadeIn"
                 style={{ marginTop: "20px", marginBottom: "20px" }}
               >
-                Anim pariatur cliche reprehenderit, enim eiusmod high life
-                accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                non cupidatat skateboard dolor brunch. Food truck quinoa
-                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
-                put a bird on it squid single-origin coffee nulla assumenda
-                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
-                wes anderson cred nesciunt sapiente ea proident. Ad vegan
-                excepteur butcher vice lomo. Leggings occaecat craft beer
-                farm-to-table, raw denim aesthetic synth nesciunt you probably
-                haven't heard of them accusamus labore sustainable VHS.
+                Since 2018, I've worked on many DevRel opportunities. Including
+                technical writing for start up companies and speaking about
+                coding at various Tech events. <br />
+                <br />
+                At Canada Learning Code, I was a Learner Experience Coordinator,
+                ensuring the students aged 6-14 were understanding the technical
+                material and teaching them in weekly classes. The material
+                myself and my team taught covered website building, game
+                development, and design practices.
+                <br />
+                <br />
+                At Little Robot Friends, I was a Digital Marketing Developer,
+                writing technical blog posts and educating the public at tech
+                events on Arduino, C, and how to code with robots. Some of my
+                articles can be found{" "}
+                <a href="https://littlerobotfriends.com/blogs/stories">
+                  here on their website.
+                </a>
               </div>
             </div>
           ) : null}
