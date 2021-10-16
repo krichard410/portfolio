@@ -12,8 +12,8 @@ class Intro extends Component {
         <h4>
           A{" "}
           <span class="Special-Text">
-            Junior Front End Engineer, Software Developer, and
-            Crypto-Enthusiast
+            Junior Front End Developer, Software Developer, and
+            Tech-Enthusiast
           </span>{" "}
           focusing on creating, building, and educating in the tech space.
         </h4>
