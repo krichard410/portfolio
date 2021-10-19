@@ -12,10 +12,10 @@ class Intro extends Component {
         <h4>
           A{" "}
           <span class="Special-Text">
-            Junior Software Developer with a keen interest in front end development and
-            Tech-Enthusiast
+            Junior Software Developer with a passion front end development
           </span>{" "}
-          focusing on creating, building, and educating in the tech space.
+          focusing on creating, building, and educating in the tech space. I'm
+          also an avid reader, tech-enthusiast, and traveller.
         </h4>
         <div class="container contactContainer">
           <div class="row">
