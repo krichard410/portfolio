@@ -41,7 +41,9 @@ class Work extends Component {
                 <h3 class="card-title">Crypto &amp; Blockchain</h3>
                 <p class="card-text">
                   Languages &amp; Skills used: Vue-JS, React, some Rust,
-                  JavaScript, Technical Writing, Technical Speaking.<br/>Based in Zug, Switzerland
+                  JavaScript, Technical Writing, Technical Speaking.
+                  <br />
+                  Based in Zug, Switzerland
                 </p>
                 <p class="card-text">
                   <small class="text-muted">
@@ -92,8 +94,8 @@ class Work extends Component {
                 on their Wiki, that explains how XCMP or Cross-Chain Message
                 Passing works on the Polkadot Blockchain between parachains.
                 <br />
-                <br /> This opportunity kicked off my passion for decentralization,
-                blockchain technologies, and cryptocurrency. 
+                <br /> This opportunity kicked off my passion for
+                decentralization, blockchain technologies, and cryptocurrency.
               </div>
             </div>
           ) : null}
@@ -118,7 +120,9 @@ class Work extends Component {
                   Languages &amp; Skills used: React, Vue-JS, PHP, SQL, Node-JS,
                   JavaScript, HTML, CSS, Gatsby-JS, Kubernetes, some Ruby on
                   Rails, Technical Teaching, Public Speaking, Leadership,
-                  Technical Writing.<br/>Based in Halifax, Canada
+                  Technical Writing.
+                  <br />
+                  Based in Halifax, Canada
                 </p>
                 <p class="card-text">
                   <small class="text-muted">
@@ -139,14 +143,14 @@ class Work extends Component {
                 class="card-body fadeIn"
                 style={{ marginTop: "20px", marginBottom: "20px" }}
               >
-                Throughout the past four years, I have held various Front end
-                positions in many different positions. One of them being a Head
-                TA for Web Design &amp; Development and Server Side Scripting at
-                Dalhousie University. During this role, I managed the TA team
-                (of about 40+ TA's) and taught to many students. Through this
-                position, I was able to communicate in a technical and
-                understanding manner and effectively explain topics in the
-                course's material.
+                Throughout the past four years, I have held various
+                front-end/web development positions. One of them being a Head
+                Teaching Assistant (TA) for Web Design &amp; Development and
+                Server Side Scripting at Dalhousie University. During this role,
+                I managed the TA team (of about 20+ TA's) and taught to many
+                students. Through this position, I was able to communicate in a
+                technical and understanding manner and effectively explain
+                topics in the course's material.
                 <br />
                 <br />
                 While I was a Junior Software Developer at Manifold, I worked in
@@ -173,7 +177,9 @@ class Work extends Component {
                 <h3 class="card-title">Developer Relations</h3>
                 <p class="card-text">
                   Languages &amp; Skills used: HTML, CSS, C, Ardiuno, Technical
-                  Teaching, Public Speaking, Technical Writing.<br/>Based in Toronto, Canada
+                  Teaching, Public Speaking, Technical Writing.
+                  <br />
+                  Based in Toronto, Canada
                 </p>
                 <p class="card-text">
                   <small class="text-muted">
