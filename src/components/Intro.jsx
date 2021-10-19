@@ -12,7 +12,7 @@ class Intro extends Component {
         <h4>
           A{" "}
           <span class="Special-Text">
-            Junior Software Developer with a passion front end development
+            Junior Software Developer with a passion for front end development
           </span>{" "}
           focusing on creating, building, and educating in the tech space. I'm
           also an avid reader, tech-enthusiast, and traveller.
