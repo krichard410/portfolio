@@ -1,5 +1,7 @@
 # Kirsten's Portfolio Website
 
+![gif-kirsten-portfolio](KirstenRichard_Portfolio.gif)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). This site holds some of my most recent work experiences and projects. Also can be found at [this Heroku link](https://kirsten-richard.herokuapp.com/). 
 
 Built with React, JS, HTML, and CSS. 
