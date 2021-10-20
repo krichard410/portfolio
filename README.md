@@ -1,6 +1,6 @@
 # Kirsten's Portfolio Website
 
-<img src="Kirstenrichard_Portfolio.gif" alt="portfolio-gif" width="200"/>
+<img src="KirstenRichard_Portfolio.gif" alt="gif-portfolio" width="200"/>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). This site holds some of my most recent work experiences and projects. Also can be found at [this Heroku link](https://kirsten-richard.herokuapp.com/). 
 
