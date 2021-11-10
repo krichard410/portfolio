@@ -13,6 +13,7 @@ class Intro extends Component {
           A{" "}
           <span class="Special-Text">
             Junior Software Developer with a passion for front end development
+            and crypto/blockchain
           </span>{" "}
           focusing on creating, building, and educating in the tech space. I'm
           also an avid reader, tech-enthusiast, and traveller.
