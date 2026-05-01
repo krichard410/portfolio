@@ -45,10 +45,9 @@ const ROLES = [
           for over 3 years as a Salesforce Developer Consultant. During my time
           at
           Slalom, I collaborated with other developers on client projects and
-          also served as the sole developer on several team initiatives, taking
-          full ownership of the development process. As a Salesforce Developer,
-          I built out complex solutions using Apex, REST API Web Services,
-          Lightning Web Components, Out-of-the-Box Flows in various clouds
+          also served as the sole developer on several team initiatives.
+          As a Salesforce Developer, I built out complex solutions using
+          Apex, REST API Web Services, Lightning Web Components, Flows in various clouds
           including Experience Cloud, Financial Services Cloud, Non-Profit
           Cloud, and Service Cloud.
         </p>
@@ -115,10 +114,9 @@ const ROLES = [
             Youtube Technical Explainer videos
           </a>{" "}
           for the Polkadot Blockchain Developer Community. I also got to
-          utilize my artistic skills and put together an animation, featured{" "}
-          <a href="https://wiki.polkadot.network/docs/learn-crosschain">here</a>{" "}
-          on their Wiki, that explains how XCMP or Cross-Chain Message Passing
-          works on the Polkadot Blockchain between parachains.
+          utilize my artistic skills and put together an animation that
+          explained how Cross-Chain Message Passing (XCMP)
+          worked between parachains on the Polkadot Blockchain.
         </p>
         <p>
           This opportunity kicked off my passion for decentralization,
@@ -165,10 +163,10 @@ const ROLES = [
             Manifold
           </a>
           , I worked in both
-          front end and back end in the company. I focused on utilizing React
+          front-end and back-end in the company. I focused on utilizing React
           to build and fix components on their main website. I also used to
           write blogs about Kubernetes on their{" "}
-          <a href="https://kubelist.com/">Kubelist.</a> In the back end, I was
+          <a href="https://kubelist.com/">Kubelist.</a> In the back-end, I was
           using Docker and Kubernetes to test containers.
         </p>
       </>
@@ -188,8 +186,8 @@ const ROLES = [
       <>
         <p>
           Since 2018, I've worked on many DevRel opportunities. Including
-          technical writing for start up companies and speaking about coding at
-          various Tech events.
+          technical writing and speaking about coding at
+          a few Tech events in Toronto.
         </p>
         <p>
           At{" "}
@@ -200,7 +198,7 @@ const ROLES = [
           >
             Canada Learning Code
           </a>
-          , I was a Learner Experience Coordinator,
+          , I was a Learner Experience Coordinator;
           ensuring the students aged 6-14 were understanding the technical
           material and teaching them in weekly classes. The material myself and
           my team taught covered website building, game development, and design
