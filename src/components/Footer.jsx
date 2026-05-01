@@ -12,8 +12,8 @@ class Footer extends Component {
           <div class="row">
             <div class="col">
               <h6>
-                I'm open for <span class="Special-Text">full-time</span> positions in the tech industry.<br/> I'm based
-                in &#127464;&#127462;, but open for remote and relocation.<br/>
+                I'm open for <span class="Special-Text">full-time</span> positions in the tech industry.<br /> I'm based
+                in 🇳🇴 from &#127464;&#127462;, but open for remote and in-office.<br />
               </h6>
             </div>
           </div>

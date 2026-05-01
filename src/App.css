@@ -17,17 +17,23 @@
   padding: 0;
 }
 
-.card{
+.card {
   background: none;
 }
 
-.img-crypto, .img-fluid {
+.img-crypto,
+.img-fluid {
   width: 30%;
   height: auto;
 }
 
+/* salesforce logo image */
+.sf {
+  width: 20px !important;
+}
+
 /* .crypto is for images */
-.crypto{
+.crypto {
   display: flex;
   justify-content: space-evenly;
 }
@@ -37,7 +43,7 @@
   margin-top: 100px;
 }
 
-.accordion{
+.accordion {
   background: none;
 }
 
@@ -49,7 +55,7 @@ li {
   list-style-type: none;
 }
 
-.click-for-more{
+.click-for-more {
   background: none;
   outline: none;
   border: none;
@@ -57,34 +63,35 @@ li {
   transition: all 1s ease-out;
 }
 
-.click-for-more:hover{
+.click-for-more:hover {
   border-bottom: 1px solid #BB86FC;
 }
 
 .fadeIn {
-	animation: fadeIn 2s;
+  animation: fadeIn 2s;
   opacity: 1;
 }
 
 @keyframes fadeIn {
   from {
-  	opacity: 0;
+    opacity: 0;
   }
+
   to {
- 	opacity: 1;
+    opacity: 1;
   }
 }
 
-.fadeInSlow{
+.fadeInSlow {
   animation: fadeIn 2.7s;
   opacity: 1;
 }
 
-.introContainer{
+.introContainer {
   padding: 90px 130px 130px 130px;
 }
 
-.footerContainer{
+.footerContainer {
   padding-top: 130px;
   padding-bottom: 130px;
   text-align: center;
@@ -95,49 +102,56 @@ li {
   padding-left: 0;
 }
 
-.flexCenter{
+.flexCenter {
   display: flex;
   justify-content: space-around;
 }
 
-.workContainer{
+.workContainer {
   margin-bottom: 80px;
 }
 
 .tinyImg {
   width: 80px;
-  height:auto;
+  height: auto;
 }
 
 /* CSS Media Queries */
 
 @media only screen and (max-width: 425px) {
+
   /* For mobile phones: */
   .mb-3 {
     padding: 25px;
     margin-top: 10px;
   }
+
   h1 {
     font-size: 9vw;
   }
-  
+
   h2 {
     font-size: 7.5vw;
   }
-  
-  h4, h3 {
+
+  h4,
+  h3 {
     font-size: 7vw;
   }
+
   .socials {
     text-align: right;
-    justify-content: flex-end;;
+    justify-content: flex-end;
+    ;
   }
+
   .contactCol {
     text-align: right;
   }
 }
 
 @media only screen and (min-width: 425px) and (max-width: 768px) {
+
   /* For tablets: */
   .mb-3 {
     border-radius: 15px;
@@ -146,10 +160,10 @@ li {
   }
 }
 
-@media only screen and (min-width: 2560px) { 
+@media only screen and (min-width: 2560px) {
+
   /* For desktops: */
-  .container-fluid{
+  .container-fluid {
     padding: 125px;
   }
 }
-

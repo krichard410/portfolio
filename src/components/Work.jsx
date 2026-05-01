@@ -5,6 +5,8 @@ import manifold from "../img/manifold.png";
 import clc from "../img/clc.png";
 import lrf from "../img/lrf.jpeg";
 import dal from "../img/dal.png";
+import slalom from "../img/s.jpeg";
+import rm from "../img/rm.png";
 
 class Work extends Component {
   state = {
@@ -27,23 +29,23 @@ class Work extends Component {
         <div class="card mb-3">
           <div class="row g-0">
             <div class="col-md-5 crypto">
-              {/* Polkadot img src: https://iconduck.com/icons/83014/polkadot-cryptocurrency*/}
+              {/* reMarkable img src: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRojclS9w5bmej-QWVx2YK_4qzYPFo-GsB2CA&s*/}
               <img
-                src={polkadot}
+                src={rm}
                 class="img-fluid rounded-start"
-                alt="polkadot"
+                alt="reMarkable"
               />
-              {/* Web3 img src: https://cryptojobslist.com/jobs/head-of-research-at-web3-foundation-zug-switzerland*/}
-              <img src={web3} class="img-fluid rounded-start" alt="web3" />
+              {/* Slalom img src: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7y3j-vH0IMqE5f9flHrTO0IErfHkhyTL0Xw&s*/}
+              <img src={slalom} class="img-fluid rounded-start" alt="slalom" />
             </div>
             <div class="col-md-7">
               <div class="card-body">
-                <h3 class="card-title">Crypto &amp; Blockchain</h3>
+                <h3 class="card-title">Salesforce</h3>
                 <p class="card-text">
-                  Languages &amp; Skills used: Vue-JS, React, some Rust,
-                  JavaScript, Technical Writing, Technical Speaking.
+                  Languages &amp; Skills used: Apex, JavaScript, Lightning Web Components (LWC),
+                  Flows, REST APIs.
                   <br />
-                  Based in Zug, Switzerland
+                  Based in Oslo, Norway 🇳🇴 and Toronto, Canada 🇨🇦
                 </p>
                 <p class="card-text">
                   <small class="text-muted">
@@ -64,22 +66,76 @@ class Work extends Component {
                 class="card-body fadeIn"
                 style={{ marginTop: "20px", marginBottom: "20px" }}
               >
+                While living in Toronto, Canada, I worked at Slalom Consulting for over 3 years as
+                a Salesforce Developer Consultant. During my time at Slalom, I collaborated with other
+                developers on client projects and also served as the sole developer on several team
+                initiatives, taking full ownership of the development process.
+                As a Salesforce Developer, I built out complex solutions using Apex, REST API Web Services,
+                Lightning Web Components, Out-of-the-Box Flows in various clouds including
+                Experience Cloud, Financial Services Cloud, Non-Profit Cloud, and Service Cloud.
+                <br />
+                <br />
+
+                I started at reMarkable in May 2025, after moving across the Atlantic Ocean to Oslo,
+                Norway. Joining the CRM Team as a Salesforce Developer has allowed me to work across
+                across Salesforce Core, Experience Cloud, Service Cloud, and parts of Marketing Cloud
+                and Data Cloud. I use Apex, LWC, JavaScript, and Flows on a daily basis.
+              </div>
+            </div>
+          ) : null}
+        </div>
+        {/*/ Container 2 */}
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-5 crypto">
+              {/* Polkadot img src: https://iconduck.com/icons/83014/polkadot-cryptocurrency*/}
+              <img
+                src={polkadot}
+                class="img-fluid rounded-start"
+                alt="polkadot"
+              />
+              {/* Web3 img src: https://cryptojobslist.com/jobs/head-of-research-at-web3-foundation-zug-switzerland*/}
+              <img src={web3} class="img-fluid rounded-start" alt="web3" />
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <h3 class="card-title">Crypto &amp; Blockchain</h3>
+                <p class="card-text">
+                  Languages &amp; Skills used: Vue-JS, React, some Rust,
+                  JavaScript, Technical Writing, Technical Speaking.
+                  <br />
+                  Based in Zug, Switzerland 🇨🇭
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">
+                    <button
+                      class="click-for-more"
+                      onClick={() => this.setState({ show: "true", id: 2 })}
+                    >
+                      <span class="Special-Text">Click for more details</span>
+                    </button>
+                  </small>
+                </p>
+              </div>
+            </div>
+          </div>
+          {this.state.show === "true" && this.state.id === 2 ? (
+            <div>
+              <div
+                class="card-body fadeIn"
+                style={{ marginTop: "20px", marginBottom: "20px" }}
+              >
                 During my time as a Technical Educator Intern at Web3
-                Foundation, I was engaged in creating tutorials for blockchain
-                developers{" "}
-                <a href="https://dotleap.com/building-and-address-converter-page-polkadot/">
-                  (like this one)
-                </a>
-                , hosting technical webinars on cryptocurrency{" "}
+                Foundation, I was engaged in creating tutorials for blockchain developers,
+                hosting technical webinars on cryptocurrency, {" "}
                 <a href="https://www.crowdcast.io/e/testing-rococo-parachain">
-                  (can be found here)
-                </a>
-                , and practicing my technical writing skills on their{" "}
+                  (link here)
+                </a> and practicing my technical writing skills on their{" "}
                 <a href="https://medium.com/web3foundation/tech-and-research-update-june-f82d6287974f">
                   Medium blog
                 </a>{" "}
                 and on their{" "}
-                <a href="https://wiki.polkadot.network/">Polkadot Wiki.</a>{" "}
+                <a href="https://wiki.polkadot.com/general/contributors/#kirsten-richard">Polkadot Wiki.</a>{" "}
                 Through this position, I also worked with other crypto
                 platforms, worked with Rust and React, and created a number of{" "}
                 <a href="https://www.youtube.com/playlist?list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8">
@@ -100,7 +156,7 @@ class Work extends Component {
             </div>
           ) : null}
         </div>
-        {/*/ Container 2 */}
+        {/*/ Container 3 */}
         <div class="card mb-3">
           <div class="row g-0">
             <div class="col-md-5 crypto">
@@ -122,13 +178,13 @@ class Work extends Component {
                   Rails, Technical Teaching, Public Speaking, Leadership,
                   Technical Writing.
                   <br />
-                  Based in Halifax, Canada
+                  Based in Halifax, Canada 🇨🇦
                 </p>
                 <p class="card-text">
                   <small class="text-muted">
                     <button
                       class="click-for-more"
-                      onClick={() => this.setState({ show: "true", id: 2 })}
+                      onClick={() => this.setState({ show: "true", id: 3 })}
                     >
                       <span class="Special-Text">Click for more details</span>
                     </button>
@@ -137,7 +193,7 @@ class Work extends Component {
               </div>
             </div>
           </div>
-          {this.state.show === "true" && this.state.id === 2 ? (
+          {this.state.show === "true" && this.state.id === 3 ? (
             <div>
               <div
                 class="card-body fadeIn"
@@ -163,7 +219,7 @@ class Work extends Component {
             </div>
           ) : null}
         </div>
-        {/*/ Container 3 */}
+        {/*/ Container 4 */}
         <div class="card mb-3">
           <div class="row g-0">
             <div class="col-md-5 crypto">
@@ -179,13 +235,13 @@ class Work extends Component {
                   Languages &amp; Skills used: HTML, CSS, C, Ardiuno, Technical
                   Teaching, Public Speaking, Technical Writing.
                   <br />
-                  Based in Toronto, Canada
+                  Based in Toronto, Canada 🇨🇦
                 </p>
                 <p class="card-text">
                   <small class="text-muted">
                     <button
                       class="click-for-more"
-                      onClick={() => this.setState({ show: "true", id: 3 })}
+                      onClick={() => this.setState({ show: "true", id: 4 })}
                     >
                       <span class="Special-Text">Click for more details</span>
                     </button>
@@ -194,7 +250,7 @@ class Work extends Component {
               </div>
             </div>
           </div>
-          {this.state.show === "true" && this.state.id === 3 ? (
+          {this.state.show === "true" && this.state.id === 4 ? (
             <div>
               <div
                 class="card-body fadeIn"

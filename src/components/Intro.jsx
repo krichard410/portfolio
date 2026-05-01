@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import memoji from "../img/memoji.png";
+import salesforce from "../img/salesforce.png";
 
 class Intro extends Component {
   render() {
@@ -12,8 +13,14 @@ class Intro extends Component {
         <h4>
           A{" "}
           <span class="Special-Text">
-            Software Developer with a passion for front end development
-            and crypto/blockchain
+            Software Developer with a passion for front end development,
+            Salesforce<sup>
+              {/* Salesforce img src: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Salesforce.com_logo.svg/3840px-Salesforce.com_logo.svg.png*/}
+              <img
+                src={salesforce}
+                class="sf"
+                alt="salesforce"
+              /></sup>, and crypto/blockchain
           </span>{" "}
           focusing on creating, building, and educating in the tech space. I'm
           also an avid reader, tech-enthusiast, and traveller.
