@@ -1,169 +1,626 @@
-.Special-Text {
-  color: #BB86FC;
+/* ===== HERO — full-bleed photo with cream ribbon caption bar ===== */
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  padding: 6vh 6vw 0;
+  background: var(--cream);
 }
 
-.row {
+.hero-bg {
+  position: absolute;
+  left: 6vw;
+  right: 6vw;
+  top: 6vh;
+  bottom: 0;
+  overflow: hidden;
+  background-color: var(--cream);
+}
+
+/* the actual photo lives in its own layer so it can be sized/zoomed
+   independently of the .hero-bg frame */
+.hero-img {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 130%;
+}
+
+.hero-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  color: var(--ink);
+  padding: 32px 8vw 36px;
+  background: var(--cream);
+  text-align: left;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.hero-eyebrow {
+  font-size: clamp(14px, 1.4vw, 17px);
+  font-weight: 500;
+  color: var(--ink-2);
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+.hero-content h1 {
+  font-family: "Instrument Serif", "Fraunces", Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(44px, 7vw, 96px);
+  line-height: 0.98;
+  letter-spacing: -0.01em;
+  margin: 0;
+  color: var(--ink);
+  text-wrap: balance;
+}
+
+.hero-content h1 .first {
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* ===== INTRO ===== */
+.intro {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 120px 8vw;
+}
+
+.intro-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.intro h2 {
+  font-family: "Manrope", "Inter", sans-serif;
+  font-weight: 700;
+  font-size: clamp(36px, 5.4vw, 76px);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0 0 28px;
+  text-wrap: balance;
+}
+
+/* keyword treatment: distinct color, no underline */
+.kw {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.kw .sf-sup {
+  font-style: normal;
+}
+
+.kw-comma {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* front end development keyword + trailing comma in teal */
+.kw.kw-fe,
+.kw-comma.kw-fe {
+  color: #3D8B7E;
+}
+
+/* Salesforce keyword + trailing comma in Salesforce brand blue */
+.kw.kw-sf,
+.kw-comma.kw-sf {
+  color: #00A1E0;
+}
+
+/* crypto/blockchain keyword in deep indigo */
+.kw.kw-crypto {
+  color: #3F3D8C;
+}
+
+.sf-sup {
+  font-size: 0.45em;
+  vertical-align: super;
+  margin-left: 1px;
+  display: inline-block;
+}
+
+.sf-sup img {
+  width: 40px !important;
+  height: auto !important;
+  vertical-align: middle;
+}
+
+.intro p.bio {
+  font-size: clamp(18px, 1.8vw, 22px);
+  line-height: 1.55;
+  color: var(--ink-2);
+  max-width: 64ch;
+  margin: 0;
+}
+
+.intro p.bio a.reader-link {
+  color: var(--ink-2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.intro p.bio a.reader-link:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.reader-sup {
+  font-size: 0.5em;
+  vertical-align: super;
+  margin-left: 2px;
+  display: inline-block;
+}
+
+.reader-sup img {
+  width: 20px !important;
+  height: auto !important;
+  vertical-align: middle;
+}
+
+/* ===== WORK ===== */
+.work {
+  position: relative;
+  background: var(--cream);
+}
+
+/* vertical timeline rule running through all roles */
+.work::before {
+  content: "";
+  position: absolute;
+  left: 8vw;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.18);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* single moving indicator on the line — only dot in the work section */
+.work-indicator {
+  content: "";
+  position: absolute;
+  left: calc(8vw - 5px);
+  top: 0;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--cream);
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  z-index: 3;
+  transform: translateY(-50%);
+  will-change: top;
+  transition: top 0.08s linear;
+  pointer-events: none;
+}
+
+.role {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 48px 8vw 48px calc(8vw + 80px);
+  position: relative;
+  background: transparent;
+}
+
+.role+.role {
+  border-top: none;
+}
+
+.role-inner {
+  max-width: 1100px;
+  margin: auto;
+  width: 100%;
+  flex: 1 1 auto;
+  display: grid;
+  grid-template-columns: 0.85fr 1.6fr;
+  grid-template-rows: auto auto;
+  gap: 40px 64px;
+  align-items: center;
+  transition: grid-template-rows 0.4s ease;
+}
+
+.role-title {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(34px, 4.4vw, 64px);
+  line-height: 1;
+  margin: 0 0 24px;
+  text-wrap: nowrap;
+  white-space: nowrap;
+}
+
+@media (max-width: 1100px) {
+  .role-title {
+    white-space: normal;
+    text-wrap: balance;
+  }
+}
+
+.role-where {
+  font-size: 15px;
+  color: var(--ink-2);
+  margin: 0 0 28px;
+}
+
+.role-stack {
+  font-size: 15.5px;
+  color: var(--ink-2);
+  line-height: 1.6;
+  max-width: 54ch;
+  margin: 0 0 24px;
+}
+
+.role-stack b {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.role-logos {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.role-logos img {
+  max-width: 150px;
+  max-height: 130px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Dalhousie logo: crop to just the crest (hide the wordmark) */
+.role-logos img[alt="Dalhousie"] {
+  width: 110px;
+  height: 110px;
+  max-width: 110px;
+  max-height: 110px;
+  object-fit: cover;
+  object-position: 0% center;
+}
+
+.logo-col {
+  position: relative;
+  min-height: 160px;
+  display: flex;
   align-items: center;
 }
 
-.socials {
-  display: flex;
-  justify-content: flex-start;
+.role-right {
+  position: relative;
 }
 
-.social-list {
-  list-style-type: none;
-  margin: 0;
+/* mobile-only drawer lives inside .role-right; hide on desktop */
+.role-right .role-detail-drawer {
+  display: none;
+}
+
+.more-btn {
+  border: 1.5px solid var(--ink);
+  background: transparent;
+  color: var(--ink);
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 12px 22px;
+  border-radius: 99px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.25s ease;
+}
+
+.more-btn:hover {
+  background: var(--ink);
+  color: var(--cream);
+}
+
+.more-btn .chev {
+  transition: transform 0.25s ease;
+}
+
+.more-btn.is-open .chev {
+  transform: rotate(180deg);
+}
+
+.role-detail-drawer {
+  position: absolute;
+  inset: 0;
+  background: inherit;
   padding: 0;
-}
-
-.card {
-  background: none;
-}
-
-.img-crypto,
-.img-fluid {
-  width: 30%;
-  height: auto;
-}
-
-/* salesforce logo image */
-.sf {
-  width: 20px !important;
-}
-
-/* .crypto is for images */
-.crypto {
   display: flex;
-  justify-content: space-evenly;
+  align-items: center;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateX(-12px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  z-index: 5;
 }
 
-.mb-3 {
-  padding: 25px;
-  margin-top: 100px;
-}
-
-.accordion {
-  background: none;
-}
-
-.card {
-  background: none;
-}
-
-li {
-  list-style-type: none;
-}
-
-.click-for-more {
-  background: none;
-  outline: none;
-  border: none;
-  padding: 0px;
-  transition: all 1s ease-out;
-}
-
-.click-for-more:hover {
-  border-bottom: 1px solid #BB86FC;
-}
-
-.fadeIn {
-  animation: fadeIn 2s;
+.role-detail-drawer.open {
+  pointer-events: auto;
   opacity: 1;
+  transform: translateX(0);
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+.role-detail-inner {
+  font-size: 15px;
+  color: var(--ink-2);
+  line-height: 1.65;
+  max-width: 54ch;
+  max-height: 70vh;
+  overflow-y: auto;
+  padding-right: 12px;
 }
 
-.fadeInSlow {
-  animation: fadeIn 2.7s;
-  opacity: 1;
+.role-detail-inner p {
+  margin: 0 0 12px;
 }
 
-.introContainer {
-  padding: 90px 130px 130px 130px;
+.role-detail-inner p:last-child {
+  margin-bottom: 0;
 }
 
-.footerContainer {
-  padding-top: 130px;
-  padding-bottom: 130px;
+.role-detail-inner a {
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 1px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.role-detail-inner a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+  background: transparent;
+}
+
+.logo-stack {
+  transition: opacity 0.3s ease;
+  width: 100%;
+}
+
+.role-inner.detail-open .logo-stack {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ===== FOOTER ===== */
+.foot {
+  min-height: 100vh;
+  padding: 120px 8vw 60px;
+  background: #8C2E5E;
+  color: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
-.contactContainer {
-  margin-top: 130px;
-  padding-left: 0;
+.foot-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 64px;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.flexCenter {
+.foot-inner {
+  max-width: 700px;
+  width: 100%;
+  text-align: left;
+}
+
+.foot-photo {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 }
 
-.workContainer {
-  margin-bottom: 80px;
-}
-
-.tinyImg {
-  width: 80px;
+.foot-photo img {
+  width: 100%;
+  max-width: 360px;
   height: auto;
+  border-radius: 4px;
+  display: block;
 }
 
-/* CSS Media Queries */
-
-@media only screen and (max-width: 425px) {
-
-  /* For mobile phones: */
-  .mb-3 {
-    padding: 25px;
-    margin-top: 10px;
-  }
-
-  h1 {
-    font-size: 9vw;
-  }
-
-  h2 {
-    font-size: 7.5vw;
-  }
-
-  h4,
-  h3 {
-    font-size: 7vw;
-  }
-
-  .socials {
-    text-align: right;
-    justify-content: flex-end;
-    ;
-  }
-
-  .contactCol {
-    text-align: right;
-  }
+.foot h2 {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(40px, 6.4vw, 84px);
+  line-height: 1.02;
+  letter-spacing: -0.01em;
+  margin: 0 0 28px;
+  text-wrap: balance;
 }
 
-@media only screen and (min-width: 425px) and (max-width: 768px) {
-
-  /* For tablets: */
-  .mb-3 {
-    border-radius: 15px;
-    padding: 25px;
-    margin-top: 80px;
-  }
+.foot h2 a {
+  color: #FFD9A8;
+  text-decoration: underline;
+  text-decoration-color: #FFD9A8;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 8px;
+  border-bottom: none;
+  padding-bottom: 0;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
 }
 
-@media only screen and (min-width: 2560px) {
+.foot h2 a:hover {
+  color: var(--cream);
+  text-decoration-color: var(--cream);
+}
 
-  /* For desktops: */
-  .container-fluid {
-    padding: 125px;
+.foot p.open {
+  font-size: clamp(16px, 1.4vw, 19px);
+  color: var(--cream);
+  margin: 0 0 56px;
+  max-width: 52ch;
+  line-height: 1.55;
+}
+
+.foot p.open .pop {
+  color: var(--cream);
+  font-weight: 600;
+}
+
+.foot-links {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  font-size: 15.5px;
+  font-weight: 500;
+}
+
+.foot-links a {
+  color: var(--cream);
+  border-bottom: 1px solid var(--cream);
+  padding-bottom: 1px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.foot-links a:hover {
+  color: #FFD9A8;
+  border-bottom-color: #FFD9A8;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 880px) {
+  .hero-img {
+    background-size: contain;
+    background-position: center top;
+  }
+
+  .foot-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .foot-inner {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .foot p.open {
+    max-width: none;
+    margin: 0 0 40px;
+  }
+  .foot-links {
+    justify-content: center;
+  }
+  .foot-photo img {
+    max-width: 180px;
+  }
+
+
+  .intro {
+    padding: 80px 24px;
+    justify-content: center;
+  }
+
+  .intro-inner {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .intro h2 {
+    font-size: clamp(28px, 8vw, 44px);
+    margin: 0 0 20px;
+  }
+
+  .intro p.bio {
+    font-size: 16px;
+  }
+
+  .work::before {
+    left: 24px;
+  }
+
+  .work-indicator {
+    left: 19px;
+  }
+
+  .role {
+    min-height: 0;
+    padding: 80px 24px 80px 56px;
+  }
+
+  .role-inner {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  /* on mobile, the drawer is moved to .role-right (under the button) — see below */
+  .logo-col {
+    min-height: 0;
+    order: 1;
+  }
+
+  .role-right {
+    order: 2;
+  }
+
+  .role-logos {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+
+  .role-logos img {
+    max-width: 110px;
+    max-height: 90px;
+    flex: 0 1 auto;
+  }
+
+  .role-logos img[alt="Dalhousie"] {
+    width: 90px;
+    height: 90px;
+    max-width: 90px;
+    max-height: 90px;
+  }
+
+  /* hide the in-column drawer on mobile — text appears under the button instead */
+  .logo-col .role-detail-drawer {
+    display: none;
+  }
+
+  .role-inner.detail-open .logo-stack {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* mobile drawer rendered inside .role-right, below the button */
+  .role-right .role-detail-drawer {
+    position: static;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding: 0;
+    display: block;
+  }
+
+  .role-right .role-detail-drawer.open {
+    max-height: 1200px;
+    padding-top: 16px;
   }
 }

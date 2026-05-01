@@ -1,40 +1,28 @@
 :root {
-  --darkThemeBackground: #121212;
-  --darkThemeFontColor: #E2E2E2;
+  --cream: #EFEDE7;
+  --cream-2: #E6E3DB;
+  --ink: #111111;
+  --ink-2: #4a4a4a;
+  --ink-3: #8a8a8a;
+  --accent: #3F3D8C;
+  --accent-soft: #3F3D8C;
 }
 
-html{
-  border-left: 2px solid white;
-}
+* { box-sizing: border-box; }
 
-body {
+html, body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: "Manrope", "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--darkThemeBackground);
-  color: var(--darkThemeFontColor);
+  line-height: 1.5;
 }
+
+a { color: var(--ink); text-decoration: none; }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-h1 {
-  font-size: 5vw;
-}
-
-h2 {
-  font-size: 3.5vw;
-}
-
-h4, h3 {
-  font-size: 3vw;
-}
-
-a, a:hover{
-  color: #BB86FC;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
